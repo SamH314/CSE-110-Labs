@@ -1,8 +1,8 @@
-.div1 {
-        background-color: skyblue;
+.div2 {
+        background-color: rgb(245, 240, 230);
 }
 
-.div2 {
+.div3 {
         background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
         color: white;    
 }
