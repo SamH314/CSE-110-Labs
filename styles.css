@@ -1,10 +1,69 @@
+.div1{
+        width: 400px;
+        position: sticky;
+        top: 0;
+        background color: white;
+        display: inline-block;
+        width:100%;
+
+}
+
 .div2 {
         background-color: rgb(245, 240, 230);
+        display:inline-block;
+        width:100%;
 }
 
 .div3 {
         background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
         color: white;    
+        display:inline-block;
+        width:100%;
+}
+
+.div4 {
+        background-color: rgb(245, 240, 230);
+        width:100%;
+        display:inline-block;
+        column-gap: 25px;
+}
+
+.column {
+        float: left;
+        width: 25%;
+        background-color: #182b49;
+        color: white;
+        height:500px;
+        overflow-y: scroll;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  font-size: 28px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #182b49;
+  color: white;
 }
 
 
