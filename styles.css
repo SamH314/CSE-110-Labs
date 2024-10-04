@@ -1,17 +1,22 @@
+html {
+    scroll-padding-top: 180px; 
+}
 .div1{
-        width: 400px;
         position: sticky;
         top: 0;
-        background color: white;
+        background-color: white;
         display: inline-block;
         width:100%;
+        z-index: 1000;
 
 }
+
 
 .div2 {
         background-color: rgb(245, 240, 230);
         display:inline-block;
         width:100%;
+            
 }
 
 .div3 {
@@ -35,7 +40,11 @@
         color: white;
         height:500px;
         overflow-y: scroll;
+
 }
+
+
+
 
 
 ul {
@@ -66,5 +75,33 @@ li a:hover {
   color: white;
 }
 
+@media (max-width:800px){
+      ul {
+              display: none;
+        }
+
+      .div1 {
+              position: sticky; 
+              top: 0;
+      }
+
+      .ucsd-logo {
+              width: 300px;
+              height: auto;
+      }
+
+      .column{
+
+              width:50%;
+      }
+
+      .column + h2 {
+              font-size: 28px;
+      }
+      
+      .column + p {
+              font-size: 20px;
+      }
+}
 
 
