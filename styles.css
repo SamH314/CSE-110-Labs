@@ -1,107 +1,95 @@
 html {
     scroll-padding-top: 180px; 
 }
-.div1{
-        position: sticky;
-        top: 0;
-        background-color: white;
-        display: inline-block;
-        width:100%;
-        z-index: 1000;
 
+.div1 {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    z-index: 1000;
 }
 
-
-.div2 {
-        background-color: rgb(245, 240, 230);
-        display:inline-block;
-        width:100%;
-            
+.div2, .div3 {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(245, 240, 230);
 }
 
 .div3 {
-        background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
-        color: white;    
-        display:inline-block;
-        width:100%;
+    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+    color: white;    
 }
 
 .div4 {
-        background-color: rgb(245, 240, 230);
-        width:100%;
-        display:inline-block;
-        column-gap: 25px;
+    background-color: rgb(245, 240, 230);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px; /* 25px gap between columns */
+    justify-content: center; /* Centers the grid */
 }
 
 .column {
-        float: left;
-        width: 25%;
-        background-color: #182b49;
-        color: white;
-        height:500px;
-        overflow-y: scroll;
-
+    background-color: #182b49;
+    color: white;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
 }
 
-
-
-
-
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  color: black;
-  font-size: 28px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    font-size: 28px;
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #182b49;
-  color: white;
+    background-color: #182b49;
+    color: white;
 }
 
-@media (max-width:800px){
-      ul {
-              display: none;
-        }
+/* Responsive styling for screens 800px wide or smaller */
+@media (max-width: 800px) {
+    ul {
+        display: none;
+    }
 
-      .div1 {
-              position: sticky; 
-              top: 0;
-      }
+    .ucsd-logo {
+        width: 300px;
+        height: auto;
+    }
 
-      .ucsd-logo {
-              width: 300px;
-              height: auto;
-      }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
 
-      .column{
+    
+    .column h2 {
+        font-size: 28px;
+    }
 
-              width:50%;
-      }
-
-      .column + h2 {
-              font-size: 28px;
-      }
-      
-      .column + p {
-              font-size: 20px;
-      }
+    .column p {
+        font-size: 20px;
+    }
 }
-
 
