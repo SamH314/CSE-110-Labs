@@ -1,4 +1,5 @@
 import { Label } from "./types";
+import { GroceryItem} from "./types";
 export const dummyNotesList = [
     {
         id: 1,
@@ -37,3 +38,8 @@ export const dummyNotesList = [
         label: Label.personal,
     },
  ]
+
+ export const dummyGroceryList = [
+    { name: "Apples", isPurchased: false },
+    { name: "Bananas", isPurchased: false },
+ ] 

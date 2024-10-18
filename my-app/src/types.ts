@@ -1,3 +1,4 @@
+
 export enum Label {
     personal = "personal",
     study = "study",
@@ -11,3 +12,4 @@ export enum Label {
     content: string;
     label: Label;
  };
+ export type GroceryItem = { name: string; isPurchased: boolean };
